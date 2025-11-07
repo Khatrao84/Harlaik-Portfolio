@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button id="portfolioBtn" class="main-btn">MY PORTFOLIO</button>
+    <nav class="nav">
+      <button id="toggleMode" class="nav-btn">Toggle Mode</button>
+      <button id="viewResume" class="nav-btn">View Resume</button>
+      <a href="images/resume.jpeg" download class="nav-btn">Download Resume</a>
+    </nav>
+  </header>
+
+  <div id="hero" class="hero">
+    <img src="images/image1.jpeg" alt="Main image" class="hero-img">
+  </div>
+
+  <main id="gallery" class="gallery hidden"></main>
+
+  <!-- Resume Modal -->
+  <div id="resumeModal" class="modal">
+    <div class="modal-content">
+      <button id="closeResume" class="close">✕</button>
+      <img src="images/resume.jpeg" alt="Resume">
+      <a href="images/resume.jpeg" download class="download-btn">⬇ Download Resume</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
