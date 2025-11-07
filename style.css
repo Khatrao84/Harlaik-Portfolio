@@ -173,15 +173,9 @@ body {
 
 /* ---------- Responsive (Mobile) ---------- */
 @media (max-width: 768px) {
-  .nav {
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-
-  /* Make hero image fit width (blue box visible), white/auto background fill */
   .hero-img {
-    object-fit: contain;
-    object-position: center;
+    object-fit: cover;          /* fill screen width, crop sides */
+    object-position: 60% center; /* focus on blue area horizontally */
     background-color: var(--dynamic-bg);
   }
 
