@@ -196,8 +196,10 @@ body {
 /* ---------- Mobile: Adjust hero image focus ---------- */
 @media (max-width: 768px) {
   .hero-img {
-    object-fit: cover;           /* fills width, crops sides */
-    object-position: 60% center; /* focus on blue area horizontally */
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;           /* fill screen width */
+    object-position: 60% center; /* focus on blue box horizontally */
     background-color: var(--dynamic-bg);
   }
 
@@ -205,7 +207,6 @@ body {
     height: auto;
   }
 }
-
 /* ---------- Custom Scrollbar ---------- */
 ::-webkit-scrollbar {
   width: 10px;
