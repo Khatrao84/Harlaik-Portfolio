@@ -196,11 +196,9 @@ body {
 /* ---------- Mobile: Adjust hero image focus ---------- */
 @media (max-width: 768px) {
   .hero-img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;          /* fill width, crop sides */
-    object-position: 59% center; /* focus on blue area horizontally */
-    background-color: var(--dynamic-bg); /* auto color for top/bottom space */
+    object-fit: contain;
+    object-position: center;
+    background-color: var(--dynamic-bg);
   }
 
   .gallery img {
