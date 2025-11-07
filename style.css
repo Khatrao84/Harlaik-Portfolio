@@ -80,9 +80,10 @@ body {
 }
 @media (max-width: 768px) {
   .hero-img {
-    transform: scale(0.5);       /* visually zooms out to 50% */
-    transform-origin: center;    /* keeps image centered */
+    object-fit: cover;          /* zooms in to fill screen */
+    object-position: center 40%; /* adjust vertical focus (move up/down to get only blue area) */
   }
+}
 }
 .gallery {
   margin-top: 70px;
