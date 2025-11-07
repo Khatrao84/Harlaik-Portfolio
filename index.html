@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader"></div>
+  <header>
+    <h1>My Portfolio</h1>
+    <div class="buttons">
+      <button id="viewResume">📄 View Resume</button>
+      <button id="toggleMode">🌙 Toggle Mode</button>
+    </div>
+  </header>
+
+  <section id="resumeSection" class="hidden">
+    <img src="images/resume.jpeg" alt="Resume" id="resumeImage">
+    <a href="images/resume.jpeg" download class="download-btn">⬇ Download Resume</a>
+  </section>
+
+  <main id="gallery" class="gallery"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>
